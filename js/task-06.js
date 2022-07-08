@@ -14,11 +14,11 @@ inputRef.addEventListener('blur', onInputCheckLength)
 console.log('SYMBOL LIMIT:', inputRef.getAttribute("data-length"))
 
 function addValidClass() {
-    inputRef.classList.add('valid')
+    inputRef.classList = 'valid'
     console.log('VALID')
 }
 function addInvalidClass() {
-    inputRef.classList.add('invalid')
+    inputRef.classList = 'invalid'
     console.log('INVALID')
 }
 
@@ -27,6 +27,6 @@ function onInputCheckLength(event) {
     const inputLimit = Number(inputRef.getAttribute("data-length"))
     console.log('SYMBOL COUNT:', inputLength)
         inputLength === inputLimit ?
-        addValidClass():
+        addValidClass() :
         addInvalidClass();  
 }
