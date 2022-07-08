@@ -9,7 +9,7 @@ const outputRef = document.querySelector('#name-output');
 inputRef.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-   event.currentTarget.value.length === 0 ?
+        this.value.length === 0 ?
         outputRef.textContent = "Anonymous":
-        outputRef.textContent = event.currentTarget.value;
+        outputRef.textContent = this.value;
 }
