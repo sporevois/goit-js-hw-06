@@ -15,8 +15,9 @@ const colorRef = document.querySelector('.color')
 buttonRef.addEventListener('click', onBodyChangeBgColor)
 
 function onBodyChangeBgColor() {
-  bodyRef.style.backgroundColor = getRandomHexColor()
-  colorRef.textContent = getRandomHexColor()
+  const RandomColor = getRandomHexColor()
+  bodyRef.style.backgroundColor = RandomColor
+  colorRef.textContent = RandomColor
 }
 
 
